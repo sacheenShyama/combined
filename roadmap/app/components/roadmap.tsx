@@ -39,8 +39,7 @@ export default function Roadmap() {
       icon: "🚀",
       duration: 2000,
     });
-    // Here you would typically navigate to the lesson page
-    // For this example, we'll just mark the lesson as completed
+
     if (!completedLessons.includes(lessonId)) {
       const newCompletedLessons = [...completedLessons, lessonId];
       setCompletedLessons(newCompletedLessons);
@@ -71,7 +70,9 @@ export default function Roadmap() {
           transition={{ type: "spring", stiffness: 100 }}
         >
           <Image
-            src="/placeholder.svg?height=32&width=32"
+            src="/placeholder.svg"
+            width={32}
+            height={32}
             alt="User Avatar"
             className="w-full h-full rounded-full"
           />
